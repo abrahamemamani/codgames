@@ -14,6 +14,8 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/raptill-alpha-1.0.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/menu-meicons.css">
 	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/sport.css">
 	<link rel="stylesheet" href="css/fight.css">
@@ -23,6 +25,60 @@
 </head>
 <body>
 	<div class="site-wrapper">
+		<header class="site-header p-absolute p-top-left">
+			<div class="container">
+				<div class="site-header-wrapper">
+					<div>
+						<span id="menu-trigger-open" class="fas fa-bars"></span>
+					</div>
+					<div>
+						<a href="#" class="btn-curve btn-instagram large t-transform-uppercase">Login/Register</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav class="site-menu nav-meicons">
+			<span id="menu-trigger-close" class="fas fa-times-circle"></span>
+			<ul class="site-menu__menu">
+				<li class="site-menu__item">
+					<a href="#" class="site-menu__link">
+						<span class="fas fa-home"></span>
+						Home
+					</a>
+				</li>
+				<li class="site-menu__item">
+					<a href="#" class="site-menu__link">
+						<span class="fas fa-tags"></span>
+						Shop
+					</a>
+				</li>
+				<li class="site-menu__item">
+					<a href="#" class="site-menu__link">
+						<span class="fas fa-users"></span>
+						Team
+					</a>
+				</li>
+				<li class="site-menu__item">
+					<a href="#" class="site-menu__link">
+						<span class="fas fa-camera"></span>
+						Gallery
+					</a>
+				</li>
+				<li class="site-menu__item">
+					<a href="#" class="site-menu__link">
+						<span class="fas fa-address-book"></span>
+						Contact
+					</a>
+				</li>
+			</ul>
+			<div class="site-menu-social">
+				<h2 class="site-menu-social__title">Social</h2>
+				<a href="#" class="site-menu__link--social" title="Follow us on Facebook"><span class="fab fa-facebook-f"></span></a>
+				<a href="#" class="site-menu__link--social" title="Follow us on Twitter"><span class="fab fa-twitter"></span></a>
+				<a href="#" class="site-menu__link--social" title="Follow us on YouTube"><span class="fab fa-youtube"></span></a>
+				<a href="#" class="site-menu__link--social" title="Follow us on Instagram"><span class="fab fa-instagram"></span></a>
+			</div>
+		</nav>
 		<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -161,5 +217,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
+	<script src="js/menu.js"></script>
 </body>
 </html>
