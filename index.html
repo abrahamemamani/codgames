@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Description of the website">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="author_name">
+	<title>Codgames</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.7/jquery.smoove.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/raptill-alpha-1.0.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/sport.css">
+	<link rel="stylesheet" href="css/fight.css">
+	<link rel="stylesheet" href="css/terror.css">
+	<link rel="stylesheet" href="css/investigation.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	<div class="site-wrapper">
+		<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  <li data-target="#myCarousel" data-slide-to="0" class="active">
+				  <img src="images/slider/1.jpg" alt="Mass effect - Andromeda">
+				  <span class="carousel-indicators-title">Mass effect</span>
+			  </li>
+			  <li data-target="#myCarousel" data-slide-to="1">
+				<img src="images/slider/2.jpg" alt="Titanfall 2">
+				<span class="carousel-indicators-title">Titanfall 2</span>
+			  </li>
+			  <li data-target="#myCarousel" data-slide-to="2">
+				<img src="images/slider/3.png" alt="Killer instinct">
+				<span class="carousel-indicators-title">Killer instinct</span>
+			  </li>
+			  <li data-target="#myCarousel" data-slide-to="3">
+				<img src="images/slider/4.jpg" alt="Overwatch">
+				<span class="carousel-indicators-title">Overwatch</span>
+			  </li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			  <div class="item active">
+				<img src="images/slider/1.jpg" alt="First image">
+			  </div>
+			  <div class="item">
+				<img src="images/slider/2.jpg" alt="Second image">
+			  </div>
+			  <div class="item">
+				<img src="images/slider/3.png" alt="Third image">
+			  </div>
+			  <div class="item">
+				<img src="images/slider/4.jpg" alt="Fourth image">
+			  </div>
+			</div>
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		</div>
+		<main class="site-main">
+			<section class="sport-wrapper p-relative">
+				<div class="rt-layer ly-black-6"></div>
+				<figure class="img-wrapper p-absolute">
+					<img class="sport__img -smoove" src="images/sport/2.png" data-scale="1.3" data-move-y="-100px" alt="">
+				</figure>
+				<div class="text-wrapper t-align-right p-absolute p-rigth-y-center">
+					<h2 class="site-title -smoove" data-move-x="-200px" data-scale="1.5">Haz deporte desde el sillón de tu casa</h2>
+					<p class="sport__text -smoove" data-move-x="200px">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Ullam praesentium soluta facere sit quaerat ab possimus dolor nemo! 
+						Officia hic earum dolorum id ducimus ullam!
+					</p>
+					<button class="btn-curve btn-twitter large -smoove" data-move-y="200px">Ir al catálogo</button>
+				</div>
+			</section>
+			<section class="fight-wrapper p-relative">
+				<div class="rt-layer ly-black-8"></div>
+				<img class="fight__img p-relative -smoove" data-move-x="-200px" src="images/fight/2.png" alt="">
+				<img class="fight__img p-relative -smoove" data-move-x="200px" src="images/fight/3.png" alt="">
+				<div class="text-wrapper p-absolute p-xy-center -smoove" data-move-y="-200px" data-move-x="-50%">
+					<h2 class="site-title">No luches por encontrar buenos precios</h2>
+					<p class="fight__text p-relative">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+						Eum quisquam quam expedita molestias quae vero distinctio. 
+						Repudiandae atque iusto fugiat molestiae! Temporibus iste obcaecati id!
+					</p>
+					<button class="btn-curve btn-twitter large">Ir al catálogo</button>
+				</div>
+			</section>
+			<section class="terror-wrapper p-relative">
+				<div class="text-wrapper t-align-right p-absolute p-rigth-y-center">
+					<h2 class="site-title -smoove" data-move-x="-200px">Siéntete acorralado por el terror</h2>
+					<p class="terror__text -smoove" data-move-x="200px" data-scale="2">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Ullam praesentium soluta facere sit quaerat ab possimus dolor nemo! 
+						Officia hic earum dolorum id ducimus ullam!
+					</p>
+					<button class="btn-curve btn-twitter large -smoove" data-move-y="-200px" data-rotate="-50deg">Ir al catálogo</button>
+				</div>
+			</section>
+			<section class="investigation-wrapper">
+				<div class="layer ly-black-5"></div>
+				<img class="investigation__img -smoove" data-move-x="200px" src="images/investigation/2.png" alt="">
+				<div class="text-wrapper t-align-center">
+					<h2 class="site-title -smoove" data-move-x="200px">Conviértete en investigador hasta la muerte</h2>
+					<p class="investigation__text t-align-left -smoove" data-move-x="-200px">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Hic voluptatibus explicabo repudiandae iusto est beatae ea unde! 
+						Amet ex autem nisi! Dolorem sapiente repellat mollitia quidem ea unde, esse perspiciatis!
+					</p>
+					<button class="btn-curve btn-twitter large -smoove" data-move-y="-200px">Ir al catálogo</button>
+				</div>
+			</section>
+		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-4">
+						<h4 class="footer__title">Info</h4>
+						<a href="#" class="site-footer__link">FAQ's</a>
+						<a href="#" class="site-footer__link">Tech Support</a>
+						<a href="#" class="site-footer__link">Terms of Use</a>
+						<a href="#" class="site-footer__link">Privacy Policy</a>
+					</div>
+					<div class="col-xs-6 col-sm-4">
+						<h4 class="footer__title">Who we are</h4>
+						<a href="#" class="site-footer__link">About Us</a>
+						<a href="#" class="site-footer__link">Why Choose Us?</a>
+						<a href="#" class="site-footer__link">Our Team</a>
+						<a href="#" class="site-footer__link">Testimonials</a>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<h4 class="footer__title">Follow us</h4>
+						<div class="site-footer__social">
+							<a href="#" class="fab fa-facebook site-footer__link--social" title="Follow us on Facebook"></a>
+							<a href="#" class="fab fa-instagram site-footer__link--social" title="Follow us on Instagram"></a>
+							<a href="#" class="fab fa-twitter site-footer__link--social" title="Follow us on Twitter"></a>
+							<a href="#" class="fab fa-youtube site-footer__link--social" title="Follow us on YouTube"></a>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>
+						&copy;2017 Codgames. Todos los derechos reservados | Diseñado por Abraham Mamani.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

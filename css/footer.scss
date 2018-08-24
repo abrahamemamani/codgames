@@ -1,0 +1,60 @@
+$color: #70798C;
+/*###### MEDIDAS ######*/
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$full-screen: 1280px;
+
+.site-footer{
+    position: relative;
+    padding-top: 55px;
+    background-color: #232936;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url("../images/brush-stroke-4.png");
+        background-size: cover;
+        background-repeat: repeat;
+        left: 0;
+        z-index: 2;
+    }
+    &::before{
+        background-position: center bottom;
+        height: 20px;
+        width: 110%;
+        top: 0;
+        left: -10%;
+        @media screen and (min-width: $mobile){
+            height: 30px;
+            width: 100%;
+            left: 0;
+        }
+        @media screen and (min-width: $tablet){
+            height: 45px;
+        }
+        @media screen and (min-width: $desktop){
+            height: 60px;
+        }
+    }
+    .footer__title{
+        color: #C83C51;
+    }
+    .site-footer__link{
+        color: $color;
+        display: block;
+    }
+    .site-footer__social{
+        .site-footer__link--social{
+            color: $color;
+            text-decoration: none;
+            margin-right: 10px;
+            font: {
+                size: 1.7em;
+            }
+        }
+    }
+    .copy{
+        padding: 55px 0;
+        color: $color;
+    }
+}

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/*###### MEDIDAS ######*/
+.sport-wrapper {
+  height: 600px;
+  background-image: url("../images/sport/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  overflow: hidden; }
+  .sport-wrapper::before, .sport-wrapper::after {
+    content: '';
+    position: absolute;
+    background-image: url("../images/brush-stroke-4.png");
+    background-size: cover;
+    background-repeat: repeat;
+    left: 0;
+    z-index: 2; }
+  .sport-wrapper::before {
+    background-position: center bottom;
+    height: 20px;
+    width: 110%;
+    top: 0;
+    left: -10%; }
+    @media screen and (min-width: 480px) {
+      .sport-wrapper::before {
+        height: 30px;
+        width: 100%;
+        left: 0; } }
+    @media screen and (min-width: 768px) {
+      .sport-wrapper::before {
+        height: 45px; } }
+    @media screen and (min-width: 1024px) {
+      .sport-wrapper::before {
+        height: 60px; } }
+  .sport-wrapper::after {
+    background-position: center 0;
+    height: 20px;
+    width: 110%;
+    bottom: 0;
+    left: -5%; }
+    @media screen and (min-width: 480px) {
+      .sport-wrapper::after {
+        height: 45px;
+        width: 100%;
+        left: 0; } }
+    @media screen and (min-width: 768px) {
+      .sport-wrapper::after {
+        height: 50px; } }
+    @media screen and (min-width: 1024px) {
+      .sport-wrapper::after {
+        height: 75px; } }
+  .sport-wrapper .img-wrapper {
+    left: 50px;
+    bottom: 10px; }
+    .sport-wrapper .img-wrapper .sport__img {
+      height: 150px; }
+  .sport-wrapper .text-wrapper {
+    color: #fff;
+    width: 100%;
+    padding: 0 15px; }
+    @media screen and (min-width: 768px) {
+      .sport-wrapper .text-wrapper {
+        width: 80%; } }
+    @media screen and (min-width: 1024px) {
+      .sport-wrapper .text-wrapper {
+        width: 50%; } }
+    .sport-wrapper .text-wrapper .site-title::before {
+      content: 'Haz deporte desde el sillón de tu casa';
+      right: .8em; }
+    .sport-wrapper .text-wrapper .sport__text {
+      margin: 1em 0; }
+      @media screen and (min-width: 768px) {
+        .sport-wrapper .text-wrapper .sport__text {
+          font-size: 1.2em; } }
+
+/*# sourceMappingURL=sport.css.map */

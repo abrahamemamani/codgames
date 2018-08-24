@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*###### MEDIDAS ######*/
+.investigation-wrapper {
+  position: relative;
+  height: 600px;
+  background-image: url("../images/investigation/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+  .investigation-wrapper .investigation__img {
+    position: relative;
+    height: 110%;
+    z-index: 2;
+    top: -10%; }
+  .investigation-wrapper .text-wrapper {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    width: 100%;
+    padding: 0 10px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); }
+    @media screen and (min-width: 768px) {
+      .investigation-wrapper .text-wrapper {
+        padding: 0;
+        width: 80%; } }
+    @media screen and (min-width: 1024px) {
+      .investigation-wrapper .text-wrapper {
+        width: 50%; } }
+    .investigation-wrapper .text-wrapper .site-title {
+      text-align: center; }
+      .investigation-wrapper .text-wrapper .site-title::before {
+        content: 'Conviértete en investigador hasta la muerte'; }
+    .investigation-wrapper .text-wrapper .investigation__text {
+      margin: 1em 0;
+      margin-left: 3em;
+      position: relative; }
+      .investigation-wrapper .text-wrapper .investigation__text::before {
+        content: '';
+        position: absolute;
+        background-color: #C83C51;
+        top: 50%;
+        left: -1.5em;
+        height: 100%;
+        width: 3px;
+        border-radius: 50px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      @media screen and (min-width: 768px) {
+        .investigation-wrapper .text-wrapper .investigation__text {
+          font-size: 1.2em; } }
+  .investigation-wrapper::before, .investigation-wrapper::after {
+    content: '';
+    position: absolute;
+    background-image: url("../images/brush-stroke-4.png");
+    background-size: cover;
+    background-repeat: repeat;
+    left: 0;
+    z-index: 2; }
+  .investigation-wrapper::before {
+    background-position: center bottom;
+    height: 20px;
+    width: 110%;
+    top: 0;
+    left: -10%; }
+    @media screen and (min-width: 480px) {
+      .investigation-wrapper::before {
+        height: 30px;
+        width: 100%;
+        left: 0; } }
+    @media screen and (min-width: 768px) {
+      .investigation-wrapper::before {
+        height: 45px; } }
+    @media screen and (min-width: 1024px) {
+      .investigation-wrapper::before {
+        height: 60px; } }
+  .investigation-wrapper::after {
+    background-position: center 0;
+    height: 20px;
+    width: 110%;
+    bottom: 0;
+    left: -5%; }
+    @media screen and (min-width: 480px) {
+      .investigation-wrapper::after {
+        height: 45px;
+        width: 100%;
+        left: 0; } }
+    @media screen and (min-width: 768px) {
+      .investigation-wrapper::after {
+        height: 50px; } }
+    @media screen and (min-width: 1024px) {
+      .investigation-wrapper::after {
+        height: 75px; } }
+
+/*# sourceMappingURL=investigation.css.map */

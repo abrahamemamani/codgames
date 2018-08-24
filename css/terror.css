@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/*###### MEDIDAS ######*/
+.terror-wrapper {
+  height: 700px;
+  background-image: url("../images/terror/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: fixed; }
+  .terror-wrapper .text-wrapper {
+    color: #fff;
+    width: 100%;
+    padding: 0 30px; }
+    @media screen and (min-width: 768px) {
+      .terror-wrapper .text-wrapper {
+        width: 80%; } }
+    @media screen and (min-width: 1024px) {
+      .terror-wrapper .text-wrapper {
+        width: 50%; } }
+    .terror-wrapper .text-wrapper .site-title::before {
+      content: 'Siéntete acorralado por el terror';
+      right: .8em; }
+    .terror-wrapper .text-wrapper .terror__text {
+      margin: 1em 0; }
+      @media screen and (min-width: 768px) {
+        .terror-wrapper .text-wrapper .terror__text {
+          font-size: 1.2em; } }
+  .terror-wrapper::before, .terror-wrapper::after {
+    content: '';
+    position: absolute;
+    background-image: url("../images/brush-stroke-4.png");
+    background-size: cover;
+    background-repeat: repeat;
+    left: 0;
+    z-index: 0; }
+  .terror-wrapper::before {
+    background-position: center bottom;
+    height: 20px;
+    width: 110%;
+    top: 0;
+    left: -10%; }
+    @media screen and (min-width: 480px) {
+      .terror-wrapper::before {
+        height: 30px;
+        width: 100%;
+        left: 0; } }
+    @media screen and (min-width: 768px) {
+      .terror-wrapper::before {
+        height: 45px; } }
+    @media screen and (min-width: 1024px) {
+      .terror-wrapper::before {
+        height: 60px; } }
+  .terror-wrapper::after {
+    background-position: center 0;
+    height: 20px;
+    width: 110%;
+    bottom: 0;
+    left: -5%; }
+    @media screen and (min-width: 480px) {
+      .terror-wrapper::after {
+        height: 45px;
+        width: 100%;
+        left: 0; } }
+    @media screen and (min-width: 768px) {
+      .terror-wrapper::after {
+        height: 50px; } }
+    @media screen and (min-width: 1024px) {
+      .terror-wrapper::after {
+        height: 75px; } }
+
+/*# sourceMappingURL=terror.css.map */

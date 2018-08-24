@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
+body, button, input, select, textarea {
+    font-family: 'Roboto Slab', serif; }
+
+
+$tablet: 768px;
+$desktop: 1024px;
+.site-title{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: -.3em;
+        color: rgba(#fff,.04);
+    }
+    @media screen and (min-width: $tablet){
+        font: {
+            size: 2em;
+        }
+    }
+    @media screen and (min-width: $desktop){
+        font: {
+            size: 2.5em;
+        }
+    }
+}

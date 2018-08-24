@@ -1,0 +1,45 @@
+/*###### MEDIDAS ######*/
+.site-footer {
+  position: relative;
+  padding-top: 55px;
+  background-color: #232936; }
+  .site-footer::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/brush-stroke-4.png");
+    background-size: cover;
+    background-repeat: repeat;
+    left: 0;
+    z-index: 2; }
+  .site-footer::before {
+    background-position: center bottom;
+    height: 20px;
+    width: 110%;
+    top: 0;
+    left: -10%; }
+    @media screen and (min-width: 480px) {
+      .site-footer::before {
+        height: 30px;
+        width: 100%;
+        left: 0; } }
+    @media screen and (min-width: 768px) {
+      .site-footer::before {
+        height: 45px; } }
+    @media screen and (min-width: 1024px) {
+      .site-footer::before {
+        height: 60px; } }
+  .site-footer .footer__title {
+    color: #C83C51; }
+  .site-footer .site-footer__link {
+    color: #70798C;
+    display: block; }
+  .site-footer .site-footer__social .site-footer__link--social {
+    color: #70798C;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.7em; }
+  .site-footer .copy {
+    padding: 55px 0;
+    color: #70798C; }
+
+/*# sourceMappingURL=footer.css.map */

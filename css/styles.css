@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+body, button, input, select, textarea {
+  font-family: 'Roboto Slab', serif; }
+
+.site-title {
+  position: relative; }
+  .site-title::before {
+    content: '';
+    position: absolute;
+    top: -.3em;
+    color: rgba(255, 255, 255, 0.04); }
+  @media screen and (min-width: 768px) {
+    .site-title {
+      font-size: 2em; } }
+  @media screen and (min-width: 1024px) {
+    .site-title {
+      font-size: 2.5em; } }
+
+/*# sourceMappingURL=styles.css.map */

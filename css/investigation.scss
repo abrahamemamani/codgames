@@ -1,0 +1,110 @@
+/*###### MEDIDAS ######*/
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$full-screen: 1280px;
+
+.investigation-wrapper{
+    position: relative;
+    height: 600px;
+    background-image: url("../images/investigation/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    .investigation__img{
+        position: relative;
+        height: 110%;
+        z-index: 2;
+        top: -10%;
+    }
+    .text-wrapper{
+        position: absolute;
+        z-index: 2;
+        color: #fff;
+        width: 100%;
+        padding: 0 10px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        @media screen and (min-width: $tablet){
+            padding: 0;
+            width: 80%;
+        }
+        @media screen and (min-width: $desktop){
+            width: 50%;
+        }
+        .site-title{
+            text-align: center;
+            &::before{
+                content: 'Conviértete en investigador hasta la muerte';
+            }
+        }
+        .investigation__text{
+            margin: 1em 0;
+            margin-left: 3em;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                background-color: #C83C51;
+                top: 50%;
+                left: -1.5em;
+                height: 100%;
+                width: 3px;
+                border-radius: 50px;
+                transform: translateY(-50%);
+            }
+            @media screen and (min-width: $tablet){
+                font: {
+                    size: 1.2em;
+                }
+            }
+        }
+    }
+    
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        background-image: url("../images/brush-stroke-4.png");
+        background-size: cover;
+        background-repeat: repeat;
+        left: 0;
+        z-index: 2;
+    }
+    &::before{
+        background-position: center bottom;
+        height: 20px;
+        width: 110%;
+        top: 0;
+        left: -10%;
+        @media screen and (min-width: $mobile){
+            height: 30px;
+            width: 100%;
+            left: 0;
+        }
+        @media screen and (min-width: $tablet){
+            height: 45px;
+        }
+        @media screen and (min-width: $desktop){
+            height: 60px;
+        }
+    }
+    &::after{
+        background-position: center 0;
+        height: 20px;
+        width: 110%;
+        bottom: 0;
+        left: -5%;
+        @media screen and (min-width: $mobile){
+            height: 45px;
+            width: 100%;
+            left: 0;
+        }
+        @media screen and (min-width: $tablet){
+            height: 50px;
+        }
+        @media screen and (min-width: $desktop){
+            height: 75px;
+        }
+    }
+}
